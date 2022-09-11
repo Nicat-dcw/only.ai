@@ -1,0 +1,18 @@
+{
+  "name": "only.ai",
+  "version": "2.0.0",
+  "description": "Türkçe AI Modülü, Daha fazlası için https://www.nicat-dcw.xyz",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ai", "only cheeini", "discord", "discordjs", "best", "request"],
+  "author": "Only Cheeini",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "node-fetch": "^3.2.6"
+  }
+}

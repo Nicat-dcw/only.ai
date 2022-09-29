@@ -22,8 +22,8 @@ this.access = accessToken;
 
   if(newUser !== "true") throw new TypeError(config.newUserConfigError)         
 }) 
-    Sor: require("./main.js"),
-    releases: require("./release.js"),
-    ekle: require("./kelimeEkle.js"),
-    set: require("./set.js")
+    Sor = require("./main.js"),
+    releases = require("./release.js"),
+    ekle = require("./kelimeEkle.js"),
+    set = require("./set.js")
 }

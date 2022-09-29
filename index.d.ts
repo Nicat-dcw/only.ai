@@ -4,7 +4,10 @@ declare module "only.ai"{
     export type OnlyAISoruEvents = {
     hata: (hata: Error) => void | Promise<void>
     }
-    export default class ai {
+    export type OnlyAIEvents = {
+    apiVersiyonEski: () => void | Promise<void>
+    }
+    export default class ai extends (EventEmitter as new() => TypedEventEmitter<OnlyAIEvents>){
     public constructor({ accessToken: string, newUser: string }) 
         Sor: class Sor extends (EventEmitter as new() => TypedEventEmitter<OnlyAISoruEvents>){
            async sor(soru: string, ayarlar: {}, configs: {})

@@ -1,6 +1,6 @@
 import EventEmitter from "node:events"
 declare module "only.ai"{
-    export class onlyai {
+    export default class ai {
         public ai(soru: string) : void;
     }
 }

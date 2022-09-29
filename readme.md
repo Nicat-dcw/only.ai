@@ -2,7 +2,9 @@
 
 ## UPDATES: [12:09:2022]
 `+` API ve Modül Bugları Düzeltildi
+
 `+` Eventler Eklendi
+
 `+` Bir Kaç Kelime Eklendi.
 
 `-` Hız 

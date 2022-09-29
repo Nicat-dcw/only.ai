@@ -8,7 +8,7 @@ declare module "only.ai"{
         Sor: class Sor extends (EventEmitter as new() => TypedEventEmitter<OnlyAISoruEvents>){
            async sor(soru, ayarlar, configs = {})
 };
-    releases: require("./release.js")
+    releases(): string
     ekle: require("./kelimeEkle.js")
     set: require("./set.js")
     }

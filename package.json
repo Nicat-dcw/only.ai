@@ -1,18 +1,40 @@
 {
-  "name": "only.ai",
-  "version": "2.0.0",
+  "name": "@greesydev/ai",
+  "version": "1.0.7",
   "description": "Türkçe AI Modülü, Daha fazlası için https://www.nicat-dcw.xyz",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ai", "only cheeini", "discord", "discordjs", "best", "request"],
+  "releases": {
+    "v2": "2.0.0 - Optimized and Added esm (es module) support."
+  },
+  "keywords": [
+    "ai",
+    "only cheeini",
+    "discord",
+    "discordjs",
+    "best",
+    "request"
+  ],
   "author": "Only Cheeini",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
     "axios": "^0.27.2",
     "chalk": "^4.1.2",
-    "node-fetch": "^3.2.6"
-  }
+    "node-fetch": "^3.2.6",
+    "npmrc": "^1.1.1",
+    "rexar-tools": "^2.7.0"
+  },
+  "types": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicat-dcw/only.ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nicat-dcw/only.ai/issues"
+  },
+  "homepage": "https://github.com/Nicat-dcw/only.ai#readme",
+  "devDependencies": {}
 }

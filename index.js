@@ -1,6 +1,7 @@
-module.exports = {
-   // class configs {
+
+   class ai extends EventEmitter {
     constructor({ accessToken, newUser }) {
+       super()
         const config = {
     usersAPIError:"[API] Hata Oluştu!",
     newUserConfigError:"[HATA] newUser: true olarak ayarlıyınız!"
@@ -20,12 +21,8 @@ this.access = accessToken;
         console.log(chalk.green(`• ${x.data.startDate || "Bulunamadı"} Ismiyle Giriş yapıldı.`))
 
 
-        
-})
-    
-                                 if(newUser !== "true") throw new TypeError(config.newUserConfigError)    
-  
-    },
+  if(newUser !== "true") throw new TypeError(config.newUserConfigError)         
+}) 
     sor: require("./main.js"),
     releases: require("./release.js"),
     ekle: require("./kelimeEkle.js"),

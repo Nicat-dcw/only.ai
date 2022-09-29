@@ -17,7 +17,13 @@ npm i only.ai@latest --save
 #### 🌟 Sohbete Başlamak için:
 ```js
 const ai = require("only.ai")
-ai.sor("merhaba!")
+const SoruManageri = new ai.Sor()
+SoruManager.sor("merhaba!")
+
+//Eventlerde mevcuttur
+SoruManager.on("hata", (hata) => {
+console.log("galiba bir hata oluştu")
+})
 ```
 
 [•] Daha fazla bilgi için: https://nicat-dcw.xyz

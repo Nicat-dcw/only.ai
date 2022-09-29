@@ -9,7 +9,7 @@ declare module "only.ai"{
            async sor(soru, ayarlar, configs = {})
 };
     releases(): string
-    ekle: require("./kelimeEkle.js")
+    ekle({ accessKey: string })
     set: require("./set.js")
     }
 }

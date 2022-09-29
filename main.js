@@ -13,8 +13,8 @@ const getConfigData = require("./set.js")
 const getReleaseData = require("./release.js")
 /*
 module.exports = async function ({ayarlar: async function(key){ return;} }) => {*/
-module.exports = async (soru, ayarlar,EventEmitter, configs= {}) => {
-  // sor: function(soru){
+module.exports = class Sor extends EventEmitter{
+async sor(soru, ayarlar, configs = {}){
     const thisModule = await rexarTools.npm("only.ai")
     if(require(`./package.json`).version !== thisModule.version){
         console.log(chalk.red("=> ") + chalk.blue("Görünüşe göre eski bir Only.ai versiyonu kullanıyorsunuz. Yenisini npm i only.ai@latest komutuyla indire bilirsiniz."))
@@ -23,7 +23,7 @@ module.exports = async (soru, ayarlar,EventEmitter, configs= {}) => {
     try{
         
     console.log(chalk.green("> Only.ai <") + chalk.yellow(" | Başlatıldı!"))
-console.log(chalk.blue("Yapımcı:") + chalk.red("Only Cheeini (https://www.nicat-dcw.xyz)"))
+    console.log(chalk.blue("Yapımcı:") + chalk.red("Only Cheeini (https://www.nicat-dcw.xyz)"))
     if(!soru) throw new TypeError(config.soruError)
     //const data = await axios.get(`https://gateway.nicat-dcw.xyz/api/v1/ai?q=${soru}`)
     const data = axios.get(`https://gateway.nicat-dcw.xyz/api/v1/ai?q=${soru}`).then(resp => {
@@ -37,8 +37,8 @@ console.log(chalk.blue("Yapımcı:") + chalk.red("Only Cheeini (https://www.nica
         const hata = new Error(error)
         hata()
         return `${config.hata}`
- //   }
-   }
+    }
+  }
 }
 
 async function releases(){

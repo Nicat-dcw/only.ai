@@ -7,7 +7,7 @@ declare module "only.ai"{
     export default class ai {
     public constructor({ accessToken: string, newUser: string }) 
         Sor: class Sor extends (EventEmitter as new() => TypedEventEmitter<OnlyAISoruEvents>){
-           async sor(soru, ayarlar, configs = {})
+           async sor(soru: string, ayarlar, configs = {})
 };
     releases(): string
     ekle({ kelime: string, yazar: string })

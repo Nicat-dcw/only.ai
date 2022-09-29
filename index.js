@@ -11,6 +11,7 @@ this.access = accessToken;
     if(accessToken === "test"){
         return `${chalk.green(`• [1 testlik Ucretsiz Kullanım Hesabı] Ismi Ile giriş yapıldı.`)}`
     }
+       this.releases()
     
     const get_user_data = axios.get(`https://gateway.nicat-dcw.xyz/api/v2/users/ai?accessToken=${accessToken}`).then(x => {
 /*if(!x.status === "200"){

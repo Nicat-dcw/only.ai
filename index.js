@@ -1,7 +1,6 @@
-
-   class ai extends EventEmitter {
+const chalk = require("chalk")
+   class ai {
     constructor({ accessToken, newUser }) {
-       super()
         const config = {
     usersAPIError:"[API] Hata Oluştu!",
     newUserConfigError:"[HATA] newUser: true olarak ayarlıyınız!"
@@ -23,7 +22,7 @@ this.access = accessToken;
 
   if(newUser !== "true") throw new TypeError(config.newUserConfigError)         
 }) 
-    sor: require("./main.js"),
+    Sor: require("./main.js"),
     releases: require("./release.js"),
     ekle: require("./kelimeEkle.js"),
     set: require("./set.js")

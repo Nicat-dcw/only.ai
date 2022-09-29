@@ -1,6 +1,5 @@
-
 const axios = require("axios") 
-    const chalk = require("chalk")
+const chalk = require("chalk")
 const EventEmitter = require("node:events")
 const rexarTools = require("rexar-tools").default
 const config = {
@@ -52,3 +51,4 @@ const get_release = await axios.get(config.releaseServer).then(x=>{
   //  getReleaseData.releases()
 }
     
+

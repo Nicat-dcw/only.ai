@@ -4,7 +4,7 @@ const axios = require("axios")
 
     BASE:"https://gateway.nicat-dcw.xyz/api/v1/ai/@me/releases"
 }
-//async function rrerelease   
+//async function release   
 module.exports = async () => {
 const get_release = await axios.get(config.BASE).then(x=>{
    const cikti = x.data

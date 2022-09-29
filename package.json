@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "Türkçe AI Modülü, Daha fazlası için https://www.nicat-dcw.xyz",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

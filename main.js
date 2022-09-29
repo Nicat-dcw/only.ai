@@ -2,7 +2,7 @@
 const axios = require("axios") 
     const chalk = require("chalk")
 const EventEmitter = require("node:events")
-const rexarTools = require("rexar-tools")
+const rexarTools = require("rexar-tools").default
 const config = {
     BASE: "https://gateway.nicat-dcw.xyz/api/v1/ai?q=",
     soruError:"Bir Soru Belirtiniz.",
@@ -14,14 +14,12 @@ const getConfigData = require("./set.js")
 const getReleaseData = require("./release.js")
 /*
 module.exports = async function ({ayarlar: async function(key){ return;} }) => {*/
-//module.exports = {
 module.exports = async (soru, ayarlar,EventEmitter, configs= {}) => {
   // sor: function(soru){
-    /*const thisModule = await rexarTools.npm("only.ai")
+    const thisModule = await rexarTools.npm("only.ai")
     if(require(`./package.json`).version !== thisModule.version){
         console.log(chalk.red("=> ") + chalk.blue("Görünüşe göre eski bir Only.ai versiyonu kullanıyorsunuz. Yenisini npm i only.ai@latest komutuyla indire bilirsiniz."))
     } else return;
-*/
     if(!getConfigData) throw new TypeError("[HATA] Lütfen bir accessToken anahtarı kullanınız!")
     try{
         

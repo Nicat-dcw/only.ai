@@ -15,10 +15,12 @@ const getReleaseData = require("./release.js")
 module.exports = async function ({ayarlar: async function(key){ return;} }) => {*/
 module.exports = class Sor extends EventEmitter{
 async sor(soru, ayarlar, configs = {}){
+    //aşağıdaki kod turkce-sozluk-api modülüne aittir yapımcıdan izin alınarak kullanılmıştır
     const thisModule = await rexarTools.npm("only.ai")
     if(require(`./package.json`).version !== thisModule.version){
         console.log(chalk.red("=> ") + chalk.blue("Görünüşe göre eski bir Only.ai versiyonu kullanıyorsunuz. Yenisini npm i only.ai@latest komutuyla indire bilirsiniz."))
     } else return;
+    //yukarıdaki kod turkce-sozluk-api modülüne aittir yapımcıdan izin alınarak kullanılmıştır
     if(!getConfigData) throw new TypeError("[HATA] Lütfen bir accessToken anahtarı kullanınız!")
     try{
         

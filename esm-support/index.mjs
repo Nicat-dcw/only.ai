@@ -1,4 +1,4 @@
-import onlyai from "../main";
+import onlyai from "../index";
 
 
 

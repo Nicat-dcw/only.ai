@@ -32,3 +32,6 @@ this.access = accessToken;
     ekle = require("./kelimeEkle.js"),
     set = require("./set.js")
 }
+      
+      
+module.exports = ai
